@@ -1,0 +1,17 @@
+header {
+    background-color: #ff9696;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 98.6%;
+    height: 40px;
+}
+
+div {
+    background-color: #a58eff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 98.6%;
+    height: 600px;
+}
