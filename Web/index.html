@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img id="logo" src="assets/img/logo.png" alt="Logo">
-        <input type="text" id="search" placeholder="Search...">
-    </header>
-    <main>
-        <p>Welcome to our website! Here you can find a variety of resources and information. Feel free to explore and contact us if you have any questions.</p>
-        <p>We are dedicated to providing the best experience for our users.</p>
-        <p id="chatbox"></p>
-        <div>
-            <input type="text" id="chatInput" placeholder="Type your message...">
-            <button id="chatButton">Chat with us</button>
-        </div>
-    </main>
-    <footer></footer>
+    <h2>Đăng ký tài khoản</h2>
+
+    <input type="text" id="txtTenTK" placeholder="Tên tài khoản">
+    <br><br>
+
+    <input type="password" id="txtMK" placeholder="Mật khẩu">
+    <br><br>
+
+    <input type="password" id="txtXNMK" placeholder="Xác nhận mật khẩu">
+    <br><br>
+
+    <input type="email" id="txtEmail" placeholder="Email">
+    <br><br>
+
+    <button onclick="dangKy()">Đăng ký</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
