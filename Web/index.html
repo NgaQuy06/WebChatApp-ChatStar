@@ -7,22 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Đăng ký tài khoản</h2>
+    <div class="container">
+        <h1>Đăng ký tài khoản</h1>
 
-    <input type="text" id="txtTenTK" placeholder="Tên tài khoản">
-    <br><br>
+        <div>
+            <label>Tên tài khoản</label>
+            <input type="text" id="txtTenTK" placeholder="Tên tài khoản">
+        </div>
 
-    <input type="password" id="txtMK" placeholder="Mật khẩu">
-    <br><br>
+        <div>
+            <label>Mật khẩu</label>
+            <input type="password" id="txtMK" placeholder="Mật khẩu">
+        </div>
 
-    <input type="password" id="txtXNMK" placeholder="Xác nhận mật khẩu">
-    <br><br>
+        <div>
+            <label>Xác nhận mật khẩu</label>
+            <input type="password" id="txtXNMK" placeholder="Xác nhận mật khẩu">
+        </div>
 
-    <input type="email" id="txtEmail" placeholder="Email">
-    <br><br>
+        <div>
+            <label>Email</label>
+            <input type="email" id="txtEmail" placeholder="Email">
+        </div>
 
-    <button onclick="dangKy()">Đăng ký</button>
-
+        <button onclick="dangKy()">Đăng ký</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
