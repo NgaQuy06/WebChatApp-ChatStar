@@ -3,6 +3,7 @@ async function dangKy() {
     let password = document.getElementById("txtMK").value;
     let xnmk = document.getElementById("txtXNMK").value;
     let email = document.getElementById("txtEmail").value;
+    let sdt = document.getElementById("txtSdt").value;
     let overlay = document.querySelector(".overlay");
 
     if (username.length == 0 || password.length == 0 || email.length == 0) {
@@ -27,10 +28,11 @@ async function dangKy() {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                username: username,
-                password: password,
-                email: email,
-                captcha: captcha
+                TenTK: username,
+                MatKhau: password,
+                Email: email,
+                Sdt: sdt,
+                Captcha: captcha
             })
         });
 
