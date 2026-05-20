@@ -1,10 +1,8 @@
 async function dangKy() {
-
     let username = document.getElementById("txtTenTK").value.trim();
     let password = document.getElementById("txtMK").value.trim();
     let xnmk = document.getElementById("txtXNMK").value.trim();
     let email = document.getElementById("txtEmail").value.trim();
-    let sdt = document.getElementById("txtSdt").value.trim();
 
     let overlay = document.querySelector(".overlay");
 
@@ -39,11 +37,6 @@ async function dangKy() {
     // số điện thoại chỉ được chứa số
     let sdtRegex = /^[0-9]+$/;
 
-    if (sdt.length > 0 && !sdtRegex.test(sdt)) {
-        alert("Số điện thoại không hợp lệ");
-        return;
-    }
-
     try {
 
         let captcha = grecaptcha.getResponse();
@@ -64,7 +57,6 @@ async function dangKy() {
                 TenTK: username,
                 MatKhau: password,
                 Email: email,
-                Sdt: sdt,
                 Captcha: captcha
             })
         });
